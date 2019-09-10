@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContainerActivity"
+    android:background="#791BE91B">
+    <TextView
+        android:id="@+id/tv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="container"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开Afragment"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@id/tv_container"/>
+
+    <FrameLayout
+        android:id="@+id/fr_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@id/button"
+        tools:layout_editor_absoluteX="0dp"></FrameLayout>
+</RelativeLayout>
